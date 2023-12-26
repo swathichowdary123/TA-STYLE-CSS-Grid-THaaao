@@ -83,9 +83,10 @@ h1{
     display:grid;
     gap:32px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: [first]120px [line2] 800px  [line3]120px;
+    grid-template-areas:"sidebar-l main sidebar-r";
+    grid-template-rows: 150px 400px 150px 150px;
 }
-.item1{
+.sidebar-l{
     background-color: white;
     padding:10px 10px;
     h2{
@@ -104,7 +105,7 @@ h1{
         text-decoration: none;
     }
 }
-.item2{
+.main{
     background-color: white;
     padding:10px 10px;
     height:400px;
@@ -129,7 +130,78 @@ h1{
         text-decoration: none;
     }
 }
-.item3{
+.sidebar-r{
+    background-color: white;
+    padding:10px 10px;
+
+    h2{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    p{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    a{
+        color:white;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: red;
+        padding:6px 6px;
+    } 
+}
+.float{
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.item4{
+    background-color: white;
+    padding:10px 10px;
+    h2{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    p{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    a{
+        color:white;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: red;
+        padding:6px 6px;
+    } 
+}
+.item5{
+    background-color: white;
+    padding:10px 10px;
+    
+    
+    h2{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    p{
+        color:black;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    a{
+        color:white;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: red;
+        padding:6px 6px;
+    } 
+}
+.item6{
     background-color: white;
     padding:10px 10px;
     h2{
