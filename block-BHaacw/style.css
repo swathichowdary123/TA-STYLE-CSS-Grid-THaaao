@@ -94,70 +94,143 @@ h1 {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: [first] 120px [line2] 800px [line3] 120px;
+  grid-template-areas: "sidebar-l main sidebar-r";
+  grid-template-rows: 150px 400px 150px 150px;
 }
 
-.item1 {
+.sidebar-l {
   background-color: white;
   padding: 10px 10px;
 }
-.item1 h2 {
+.sidebar-l h2 {
   color: black;
   margin-bottom: 16px;
   font-size: 16px;
 }
-.item1 p {
+.sidebar-l p {
   color: black;
   margin-bottom: 16px;
   font-size: 14px;
 }
-.item1 a {
+.sidebar-l a {
   color: red;
   font-size: 16px;
   text-decoration: none;
 }
 
-.item2 {
+.main {
   background-color: white;
   padding: 10px 10px;
   height: 400px;
 }
-.item2 h2 {
+.main h2 {
   color: black;
   margin-bottom: 16px;
   font-size: 16px;
 }
-.item2 img {
+.main img {
   width: 240px;
   height: 240px;
   border-radius: 50%;
 }
-.item2 p {
+.main p {
   color: black;
   margin-bottom: 16px;
   font-size: 14px;
 }
-.item2 a {
+.main a {
   color: red;
   font-size: 16px;
   text-decoration: none;
 }
 
-.item3 {
+.sidebar-r {
   background-color: white;
   padding: 10px 10px;
 }
-.item3 h2 {
+.sidebar-r h2 {
   color: black;
   margin-bottom: 16px;
   font-size: 16px;
 }
-.item3 p {
+.sidebar-r p {
   color: black;
   margin-bottom: 16px;
   font-size: 14px;
 }
-.item3 a {
+.sidebar-r a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: red;
+  padding: 6px 6px;
+}
+
+.float {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item4 {
+  background-color: white;
+  padding: 10px 10px;
+}
+.item4 h2 {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.item4 p {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.item4 a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: red;
+  padding: 6px 6px;
+}
+
+.item5 {
+  background-color: white;
+  padding: 10px 10px;
+}
+.item5 h2 {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.item5 p {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.item5 a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: red;
+  padding: 6px 6px;
+}
+
+.item6 {
+  background-color: white;
+  padding: 10px 10px;
+}
+.item6 h2 {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.item6 p {
+  color: black;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.item6 a {
   color: white;
   font-size: 16px;
   text-decoration: none;
